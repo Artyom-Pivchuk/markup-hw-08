@@ -1,0 +1,28 @@
+.logo {
+    font-family: var(--secondary-font-family);
+    @include font (26px, 700, 1.19);
+}
+
+.logo_prefix-color_blue {
+    color: var(--accent-color);
+}
+
+.logo_theme_light {
+    color: #000000;
+    
+    &:focus {
+        color: #000000;
+    }
+}
+
+.logo_theme_dark {
+     color: var(--title-color);
+
+    &:focus {
+        color: var(--title-color);
+    }
+}
+
+.logo-header-link {
+    margin-right: 93px;
+}

@@ -1,0 +1,23 @@
+.address-footer-contacts {
+    margin-top: 20px;
+}
+
+.footer-contacts__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__item:not(:first-child) {
+    margin-top: 9px;
+}
+
+
+.footer-contacts__link_font-color_white {
+    color: var(--title-color);
+
+    &:focus {
+        color: var(--title-color);
+    }
+}
