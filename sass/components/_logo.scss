@@ -23,6 +23,14 @@
     }
 }
 
-.logo-header-link {
-    margin-right: 93px;
+@media screen and (min-width: 768px) {
+    .logo-header-link {
+        margin-right: 88px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo-header-link {
+        margin-right: 93px;
+    }
 }
