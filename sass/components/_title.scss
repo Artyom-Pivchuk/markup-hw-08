@@ -1,5 +1,15 @@
-.section__title {
-    @include font (36px, 700, 1.17);
-    margin-bottom: 50px;
-    text-align: center;
+@media screen and (max-width: 1199.98px) {
+    .section__title {
+        @include font (28px, 700, 1.17);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section__title {
+        @include font (36px, 700, 1.17);
+        margin-bottom: 50px;
+        text-align: center;
+    }
 }

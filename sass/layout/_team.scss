@@ -1,17 +1,50 @@
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+@media screen and (max-width: 767.98px) {
+    .team {
+        display: block;       
+    }
+
+    .team__item:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    .team__item {
+        margin-top: 30px;
+        margin-left: 30px;
+        flex-basis: calc((100% - 60px) / 2);
+        }
+}
+
+
+@media screen and (max-width: 1199.98px) {
+    .team__item {
+        padding-bottom: 24px;
+    }
+}
+
+    
+@media screen and (min-width: 1200px) {
+    .team__item {
+        margin-top: 30px;
+        margin-left: 30px;
+        flex-basis: calc((100% - 120px) / 4);
+    }
 }
 
 .team__item {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc((100% - 120px) / 4);
     background: var(--title-color);
     padding-bottom: 30px;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
 }
 

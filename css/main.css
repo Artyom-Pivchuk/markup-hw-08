@@ -62,7 +62,6 @@ body {
 }
 
 .container {
-  max-height: 60px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -77,7 +76,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    min-height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -85,7 +83,7 @@ body {
     width: 1200px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -109,14 +107,24 @@ body {
   padding-bottom: 50px;
 }
 
-.section__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  margin-bottom: 50px;
-  text-align: center;
+@media screen and (max-width: 1199.98px) {
+  .section__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
 .logo {
   font-family: var(--secondary-font-family);
   font-size: 26px;
@@ -380,7 +388,7 @@ body {
   outline-color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -451,7 +459,15 @@ body {
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .page-header__container {
+    max-height: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .page-header__container {
+    height: 80px;
+  }
   .menu {
     display: flex;
   }
@@ -603,7 +619,7 @@ body {
   background: #188CE8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .hero {
     max-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img-hero-mobile.jpg");
@@ -652,7 +668,7 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img-hero-desktop@x2.jpg");
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .priorities__title {
     text-align: center;
   }
@@ -702,45 +718,72 @@ body {
   align-items: center;
 }
 
-.employment {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+@media screen and (max-width: 1199.98px) {
+  .section-employment {
+    display: none;
+  }
 }
-
-.employment__item {
-  position: relative;
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+@media screen and (min-width: 1200px) {
+  .employment {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .employment__item {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .employment__overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
-
-.employment__overlay {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--title-color);
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (max-width: 767.98px) {
+  .team {
+    display: block;
+  }
+  .team__item:not(:first-child) {
+    margin-top: 30px;
+  }
 }
-
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .team__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
-
+@media screen and (max-width: 1199.98px) {
+  .team__item {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
 .team__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
   background: var(--title-color);
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
