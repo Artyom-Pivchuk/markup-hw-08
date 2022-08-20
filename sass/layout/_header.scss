@@ -7,7 +7,16 @@ display: none;
 }
 
 .page-header {
+    background-color: #FFFFFF;
     border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
