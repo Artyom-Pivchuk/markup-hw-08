@@ -10,6 +10,25 @@
     margin-left: 8px;
 }
 
+@media screen and (max-width: 767.98px) {
+    .filters {
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+
+    .filters__item {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }    
+}
+
 .filters__btn {
     min-width: 73px;
     padding: 6px 22px;
