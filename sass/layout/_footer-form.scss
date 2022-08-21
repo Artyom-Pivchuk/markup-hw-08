@@ -71,13 +71,42 @@
     .footer-form-input {
         width: 100%;
     }
+
+    .footer-socials-wrapper {
+     padding-top: 60px;
+    }
+
+    .footer-form-wrapper {
+        padding-top: 60px;
+    }
+ }
+
+@media screen and (min-width: 767px) and (max-width: 1199.98px) {
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form-wrapper {
+       padding-top: 60px;
+       padding-left: 7px;
+    }   
+
+    .footer-form-input {
+        width: 450px;
+    }
+    
+    .footer-btn-wrapper {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .footer-form__description {
-        margin-top: 12px;
+    .footer-form-wrapper {
+        padding-top: 12px;
     }
-
+    
     .footer-form-input {
         width: 358px;
     }

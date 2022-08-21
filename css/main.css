@@ -150,7 +150,7 @@ body {
   color: var(--title-color);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -930,17 +930,14 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .footer-socials-wrapper {
-    margin-top: 60px;
-  }
-  .footer-form-wrapper {
-    margin-top: 60px;
-  }
 }
-@media screen and (min-width: 768px) {
-  .footer-container {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-wrapper {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 75px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -948,6 +945,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .footer-wrapper {
+    display: flex;
   }
 }
 .address-footer-contacts {
@@ -972,7 +972,7 @@ body {
   color: var(--title-color);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer-contacts {
     text-align: center;
   }
@@ -983,14 +983,9 @@ body {
   color: var(--title-color);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer-socials-description {
     text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-socials-description {
-    margin-top: 12px;
   }
 }
 .footer-socials__icon {
@@ -1019,6 +1014,17 @@ body {
   background-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-socials-wrapper {
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials-wrapper {
+    padding-left: 70px;
+    padding-top: 12px;
+  }
+}
 .footer-form__description {
   font-weight: 700;
   text-transform: uppercase;
@@ -1092,10 +1098,33 @@ body {
   .footer-form-input {
     width: 100%;
   }
+  .footer-socials-wrapper {
+    padding-top: 60px;
+  }
+  .footer-form-wrapper {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199.98px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-form-wrapper {
+    padding-top: 60px;
+    padding-left: 7px;
+  }
+  .footer-form-input {
+    width: 450px;
+  }
+  .footer-btn-wrapper {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .footer-form__description {
-    margin-top: 12px;
+  .footer-form-wrapper {
+    padding-top: 12px;
   }
   .footer-form-input {
     width: 358px;
