@@ -441,6 +441,7 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 2;
   }
   .mobile-menu__container {
     position: relative;

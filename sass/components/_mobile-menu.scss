@@ -23,14 +23,15 @@
     .mobile-menu.is-open {
         opacity: 1;
         visibility: visible;
-        pointer-events: auto;
+        pointer-events: auto; 
+        z-index: 2;           
     }
 
     .mobile-menu__container {
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
-        padding-left: 40px;
+        padding-left: 40px;        
     }
 
     .mobile-menu__close-btn {
