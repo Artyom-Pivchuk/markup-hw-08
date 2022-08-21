@@ -253,12 +253,41 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
   padding: 40px;
   background-color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 479.98px) {
+  .modal {
+    width: 98%;
+    height: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+  }
+  .contact-form-description {
+    font-size: 18px;
+  }
+  .contact-form-checkbox-label {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .contact-form-checkbox-label {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
