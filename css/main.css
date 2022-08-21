@@ -1154,24 +1154,23 @@ body {
     margin-left: 12px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-  .portfolio__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
-    cursor: pointer;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+
+.portfolio__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio__container {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
@@ -1217,4 +1216,15 @@ body {
 }
 .portfolio__link:hover .portfolio__overlay, .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__container {
+    max-width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }/*# sourceMappingURL=main.css.map */
