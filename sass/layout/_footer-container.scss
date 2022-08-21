@@ -4,8 +4,33 @@
     padding-top: 60px;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+@media screen and (max-width: 767.98px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .footer-socials-wrapper {
+        margin-top: 60px;
+    }
+
+    .footer-form-wrapper {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }    
 }

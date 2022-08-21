@@ -13,11 +13,16 @@
     margin-top: 9px;
 }
 
-
 .footer-contacts__link_font-color_white {
     color: var(--title-color);
 
     &:focus {
         color: var(--title-color);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .footer-contacts {
+        text-align: center;
     }
 }
