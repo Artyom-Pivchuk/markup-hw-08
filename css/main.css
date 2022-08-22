@@ -550,12 +550,12 @@ body {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
-@media screen and (max-width: 400px) {
-  .mobile-menu__phone-link {
-    font-size: 27px;
-  }
-}
 @media screen and (max-width: 369.98px) {
+  .mobile-menu__contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .mobile-menu__socials-list {
     flex-direction: column;
     align-items: center;
@@ -564,7 +564,7 @@ body {
     font-size: 20px;
   }
   .mobile-menu__phone-link {
-    font-size: 20px;
+    font-size: 24px;
   }
   .mobile-menu__socials-item:not(:first-child) {
     padding-top: 10px;
