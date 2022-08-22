@@ -6,6 +6,7 @@
 }
 
 .portfolio__item {
+    display: flex;
     margin-left: 30px;
     margin-top: 30px;
     cursor: pointer;
@@ -16,10 +17,16 @@
     }
 }
 
+.portfolio__link {
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio__container {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
+    flex-grow: 1;
 }
 
 .portfolio__title {
@@ -62,8 +69,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    .portfolio__container {
-        max-width: 354px;
+    .portfolio__item {
+        flex-basis: calc((100% - 60px) / 2);
     }
 }
 
