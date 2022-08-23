@@ -23,13 +23,11 @@
         }
 }
 
-
 @media screen and (max-width: 1199.98px) {
     .team__item {
         padding-bottom: 24px;
     }
 }
-
     
 @media screen and (min-width: 1200px) {
     .team__item {
@@ -70,31 +68,6 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
-}
-
-.team__socials-icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .team__socials-link:hover &,
-    .team__socials-link:focus & {
-        fill: var(--title-color);
-    }
-}
-
-.team__socials-link {
-    @extend %align;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
 }
 
 .team__socials-item:not(:first-child) {

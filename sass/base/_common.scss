@@ -31,3 +31,35 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.14;
 }
+
+.socials-link {
+    @extend %align;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.socials-icon {
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .socials-link:hover &,
+    .socials-link:focus & {
+        fill: var(--title-color);
+    }
+}
+
+.socials-link--dark-theme {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.socials-icon--light-theme {
+    fill: #afb1b8;    
+}
